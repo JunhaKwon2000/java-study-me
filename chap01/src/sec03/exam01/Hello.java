@@ -23,6 +23,7 @@ public class Hello { // 클래스 선언 - 대문자로 시작, source file 이�
 		// 저장할 때마다 자동으로 컴파일됨, 에러 있을 시 빨간줄 발생
 		
 		System.out.println("Hello // /**/ World!"); // 문자열 내부 주석 X
+		System.out.println("Hello Java!");
 	}
 
 }
