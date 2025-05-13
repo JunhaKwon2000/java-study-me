@@ -15,7 +15,10 @@ public class BooleanExample {
 		else {
 			System.out.println("시작합니다.");
 		}
-
+		
+		
+		double v = 3.141592;
+		System.out.println(Math.round(v * 1000) / 1000.0);
 	}
 
 }
