@@ -12,9 +12,9 @@ public class Homework4 {
 		int english = sc.nextInt();
 		
 		System.out.println("합계 : " + (korean + math + english));
-		int avg = (korean + math + english) / 3;
-		System.out.println("평균 : " + avg);
-		System.out.println(avg >= 90 ? "휴대폰을 바꿀 수 있습니다." : "휴대폰을 바꿀 수 없습니다.");
+		double avg = (korean + math + english) / 3.0;
+		System.out.println("평균 : " + Math.round(avg));
+		System.out.println((avg >= 90.0 && korean >= 60 && math >= 60 && english >= 60) ? "휴대폰을 바꿀 수 있습니다." : "휴대폰을 바꿀 수 없습니다.");
 		
 		sc.close();
 	}
