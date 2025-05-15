@@ -39,11 +39,11 @@ public class AssignmentOperatorExample {
 		int money = sc.nextInt();
 		
 		int fives = money / 500;
-		money -= (fives*500);
+		money -= (fives * 500);
 		int hunnids = money / 100;
-		money -= (hunnids*100);
+		money -= (hunnids * 100);
 		int fifty = money / 50;
-		money -= (fifty*50);
+		money -= (fifty * 50);
 		int tens = money / 10;
 		money -= (tens * 10);
 		System.out.println("500원:" + fives + "개");
