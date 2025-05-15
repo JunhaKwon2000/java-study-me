@@ -11,9 +11,7 @@ public class Homework6 {
 		
 		char a = sc.next().charAt(0);
 		
-		String b = a + "";
-		
-		int c = Integer.parseInt(b);
+		int c = Integer.parseInt(a + "");
 		
 		System.out.println("입력한 숫자의 제곱은 " + c*c + "입니다.");
 		sc.close();
