@@ -1,5 +1,7 @@
 package sec02.exam07;
 
+import java.util.Scanner;
+
 public class WhilePrint1To100Example {
 	
 	public static void main(String[] args) {
@@ -22,6 +24,7 @@ public class WhilePrint1To100Example {
 			if (true) flag = false;
 		}
 		// 실제 사용 예: 특정 조건을 만족하면 멈추도록
+		// 변수를 사용하는 방식과 true 를 사용하는 방식의 차이점을 알고 있기(코드의 실행 로직)
 		
 		int i = 1;
 		int doSum = 0;
@@ -31,6 +34,40 @@ public class WhilePrint1To100Example {
 			i++;
 		} while (i <= 100);
 		System.out.println(doSum);
+		
+		System.out.println("=============================");
+		// Quiz: 1부터 100까지 홀수의 합
+		int oddSum = 0;
+		int oddCnt = 1;
+		while (oddCnt <= 100) {
+			if (oddCnt % 2 != 0) {
+				oddSum += oddCnt;				
+			}
+			oddCnt++;
+		}
+		System.out.println(oddSum);
+		
+		// Quiz2
+//		화면에서 자연수를 입력받아서 각 자리수의 합을 출력하는 프로그램을 구현하시오.
+//
+//		[입력]    [출력]
+//		 123   =>  6
+//		 12345 =>  15
+		Scanner sc = new Scanner(System.in);
+		String N = sc.next();
+		
+		int idx = 0;
+		int locSum = 0;
+		
+		while (idx <= (N.length() - 1)) {
+			locSum += Integer.parseInt(N.charAt(idx) + "");
+			idx++;
+		}
+		System.out.println(locSum);
+		
+		sc.close();
+		
+		
 		
 	}
 }
