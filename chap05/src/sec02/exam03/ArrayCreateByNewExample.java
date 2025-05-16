@@ -22,6 +22,48 @@ public class ArrayCreateByNewExample {
 			System.out.print(arr1[i] + "      ");
 		}
 		
+		System.out.println();
+		System.out.println();
+		
+		double[] arr2 = new double[3];
+		for (int i = 0; i < arr2.length; i++) {
+			System.out.print("arr2[" + i + "]: ");
+			System.out.print(arr2[i] + "      ");
+		}
+		
+		System.out.println();
+		
+		arr2[0] = 1.0;
+		arr2[1] = 2.0;
+		arr2[2] = 3.0;
+		for (int i = 0; i < arr2.length; i++) {
+			System.out.print("arr2[" + i + "]: ");
+			System.out.print(arr2[i] + "      ");
+		}
+		
+		System.out.println();
+		System.out.println();
+		
+		String[] arr3 = new String[3];
+		for (int i = 0; i < arr3.length; i++) {
+			System.out.print("arr3[" + i + "]: ");
+			System.out.print(arr3[i] + "      ");
+		}
+		
+		System.out.println();
+		
+		arr3[0] = "cars";
+		arr3[1] = "keys";
+		arr3[2] = "bins";
+		for (int i = 0; i < arr3.length; i++) {
+			System.out.print("arr3[" + i + "]: ");
+			System.out.print(arr3[i] + "      ");
+		}
+		
+		// 정리: 배열은 값 목록을 이용해서 생성 또는 값 목록이 없으면은 길이를 지정하여 배열 객체를 생성
+		// 배열은 처음 생성 시 길이가 정해지면 변경 불가능!!!
+		// 배열 생성 시 지정된 타입으로만 저장 가능
+		
 	}
 
 }
