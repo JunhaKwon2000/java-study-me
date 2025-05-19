@@ -2,7 +2,7 @@ package pkg_homework;
 
 import java.util.Scanner;
 
-public class Homework8 {
+public class Homework08 {
 
 	public static void main(String[] args) {
 		
@@ -25,7 +25,12 @@ public class Homework8 {
 			else if (a == 0) break;
 			else {
 				System.out.println("=== " + a + "단 ===");
-				for (int i = 1; i <= 9; i++) System.out.println(a + " X " + i + " = " + (a * i));
+				for (int j = a; j <= 9; j++) {					
+					for (int i = 1; i <= 9; i++) {
+						System.out.println(a + " X " + i + " = " + (a * i));
+					}
+					System.out.println();
+				}
 				System.out.print("숫자 : ");
 				a = sc.nextInt();
 			}

@@ -1,7 +1,7 @@
 package pkg_homework;
 import java.util.Scanner;
 
-public class Homework9 {
+public class Homework09 {
 
 	public static void main(String[] args) {
 		
