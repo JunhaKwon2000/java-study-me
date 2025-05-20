@@ -11,11 +11,12 @@ public class Homework06 {
 		
 		System.out.print("배열의 크기를 입력하세요 : ");
 		int N = sc.nextInt();
+		sc.nextLine();
 		String[] arr = new String[N];
 		
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print((i + 1) + "번째 문자열 : ");
-			String v = sc.next();
+			String v = sc.nextLine();
 			arr[i] = v;
 		}
 		
@@ -27,11 +28,12 @@ public class Homework06 {
 			if ("Y".equals(choice) || "y".equals(choice)) {
 				System.out.print("더 입력하고 싶은 개수 : ");
 				int plus = sc.nextInt();
+				sc.nextLine();
 				int initIdx = arr.length;
 				arr = Arrays.copyOf(arr, initIdx + plus);
 				for (int i = initIdx; i < arr.length; i ++) {
 					System.out.print((i + 1) + "번째 문자열 : ");
-					String v = sc.next();
+					String v = sc.nextLine();
 					arr[i] = v;
 				}
 			}
