@@ -11,7 +11,7 @@ public class Homework06 {
 		
 		System.out.print("배열의 크기를 입력하세요 : ");
 		int N = sc.nextInt();
-		sc.nextLine();
+		sc.nextLine(); // garbage \n 버리기 (nextInt 다음 next 나 nextLine 이 있을 때 애가 먹어버림...)
 		String[] arr = new String[N];
 		
 		for (int i = 0; i < arr.length; i++) {
@@ -28,7 +28,7 @@ public class Homework06 {
 			if ("Y".equals(choice) || "y".equals(choice)) {
 				System.out.print("더 입력하고 싶은 개수 : ");
 				int plus = sc.nextInt();
-				sc.nextLine();
+				sc.nextLine(); // garbage \n 버리기 (nextInt 다음 next 나 nextLine 이 있을 때 애가 먹어버림...)
 				int initIdx = arr.length;
 				arr = Arrays.copyOf(arr, initIdx + plus);
 				for (int i = initIdx; i < arr.length; i ++) {
