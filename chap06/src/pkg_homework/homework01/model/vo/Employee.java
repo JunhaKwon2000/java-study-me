@@ -2,6 +2,7 @@ package pkg_homework.homework01.model.vo;
 
 public class Employee {
 	
+	// field
 	public String name;
 	public String team;
 	String position;
