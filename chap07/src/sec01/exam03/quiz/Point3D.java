@@ -5,7 +5,7 @@ public class Point3D extends Point {
 	protected int z;
 
 	public Point3D(int x, int y, int z) {
-		super(x, y);
+		super(x, y); // differs by number/type of parameters(constructor overload)
 		this.z = z;
 	}
 
