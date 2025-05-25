@@ -16,14 +16,7 @@ public class Run {
 		std[1] = new Student("이영희", 23, 167.0, 54.0, 4, "물리학과");
 		std[2] = new Student("김철수", 21, 197.6, 86.0, 2, "경역학과");
 		
-		for (Student s : std) {
-			System.out.println("=== " + s.getName() + " ===");
-			System.out.println("나이 : " + s.getAge());
-			System.out.println("키 : " + s.getHeight());
-			System.out.println("몸무게 : " + s.getWeight());
-			System.out.println("학년 : " + s.getGrade());
-			System.out.println("전공 : " + s.getMajor());
-		}
+		for (Student s : std) System.out.println(s.toString());
 		
 		
 		Employee[] emp = new Employee[10];
@@ -53,12 +46,7 @@ public class Run {
 		}
 		
 		for (int i = 0; i < cnt; i++) {
-			System.out.println("=== " + emp[i].getName() + " ===");
-			System.out.println("나이 : " + emp[i].getAge());
-			System.out.println("키 : " + emp[i].getHeight());
-			System.out.println("몸무게 : " + emp[i].getWeight());
-			System.out.println("학년 : " + emp[i].getSalary());
-			System.out.println("전공 : " + emp[i].getDept());
+			System.out.println(emp[i].toString());
 		}
 		
 		sc.close();

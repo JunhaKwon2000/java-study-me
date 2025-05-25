@@ -17,7 +17,7 @@ public class Person {
 	
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", age=" + age + ", height=" + height + ", weight=" + weight + "]";
+		return "=== " + name + " ===\n" + "나이 : " + age + "\n키 : " + height + "\n몸무게 : " + weight;
 	}
 	public String getName() {
 		return name;

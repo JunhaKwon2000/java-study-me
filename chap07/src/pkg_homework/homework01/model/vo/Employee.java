@@ -16,7 +16,7 @@ public class Employee extends Person {
 
 	@Override
 	public String toString() {
-		return "Employee [salary=" + salary + ", dept=" + dept + "]";
+		return super.toString() + "\n급여 : " + salary + "\n부서 : " + dept;
 	}
 
 	public int getSalary() {

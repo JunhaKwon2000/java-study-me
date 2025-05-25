@@ -2,9 +2,12 @@ package pkg_homework.homework02.model.vo;
 
 public class GreenTea extends Cake {
 	
+	// field
 	private double powder;
+	
 	private int cheese;
 	
+	// constructor
 	public GreenTea() {}
 
 	public GreenTea(double flour, double cream, double powder, int cheese) {
@@ -13,6 +16,7 @@ public class GreenTea extends Cake {
 		this.cheese = cheese;
 	}
 
+	// method
 	public double getPowder() {
 		return powder;
 	}
@@ -31,7 +35,7 @@ public class GreenTea extends Cake {
 
 	@Override
 	public String toString() {
-		return "GreenTea [powder=" + powder + ", cheese=" + cheese + "]";
+		return super.toString() + "녹차 파우더 : " + powder + "(g)" + "\n치즈 큐브 : " + cheese + "(개)\n치즈 케이크가 완성되었습니다.";
 	};
 	
 	

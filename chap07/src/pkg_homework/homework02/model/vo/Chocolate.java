@@ -2,9 +2,11 @@ package pkg_homework.homework02.model.vo;
 
 public class Chocolate extends Cake {
 	
+	// field
 	private int cherry;
 	private int chip;
 	
+	// constructor
 	public Chocolate() {}
 
 	public Chocolate(double flour, double cream, int cherry, int chip) {
@@ -13,6 +15,7 @@ public class Chocolate extends Cake {
 		this.chip = chip;
 	}
 
+	// method
 	public int getCherry() {
 		return cherry;
 	}
@@ -31,7 +34,7 @@ public class Chocolate extends Cake {
 
 	@Override
 	public String toString() {	
-		return "초콜릿 케이크가 완성되었습니다.";
+		return super.toString() + "체리 : " + cherry + "(개)" + "\n초콜릿 칩 : " + chip + "(개)\n초콜릿 케이크가 완성되었습니다.";
 	}
 	
 	

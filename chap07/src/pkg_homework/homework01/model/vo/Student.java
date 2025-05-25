@@ -15,7 +15,7 @@ public class Student extends Person {
 	
 	@Override
 	public String toString() {
-		return "Student [grade=" + grade + ", major=" + major + "]";
+		return super.toString() + "\n학년 : " + grade + "\n전공 : " + major;
 	}
 	public int getGrade() {
 		return grade;
