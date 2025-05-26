@@ -46,7 +46,7 @@ public class Run {
 			System.out.println(animal.getKind() + ", 다리수: " + animal.getLeg() + "개");
 			animal.sound();
 			animal.eat();
-			if (animal instanceof Eagle e) e.fly();
+			if (animal instanceof Flyable f) f.fly();
 		}
 		
 	}
