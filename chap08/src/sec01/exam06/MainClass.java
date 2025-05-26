@@ -11,14 +11,17 @@ public class MainClass {
 		
 		System.out.println("2)------------------------");
 		MyClass mc2 = new MyClass(new Audio());
+		System.out.println(mc2);
 		
 		System.out.println("3)------------------------");
 		MyClass mc3 = new MyClass();
 		mc3.methodA();
+		System.out.println(mc3);
 		
 		System.out.println("4)------------------------");
 		MyClass mc4 = new MyClass();
 		mc3.methodB(new Television());
+		System.out.println(mc4);
 	}
 	
 }
