@@ -12,7 +12,7 @@ public class Run {
 		String[] dishName = {"칼국수", "뼈해장국", "스파게티"};
 		String[] ingredientsArray = {"밀가루", "돼지", "토마토"};
 		String[] drinkName = {"아이스티", "레몬티", "녹차"};
-		String[] recipeArray = {"아이스티 레시피", "레몬티 레시피", "녹차 레시피 3"};
+		String[] recipeArray = {"아이스티 레시피", "레몬티 레시피", "녹차 레시피"};
 		
 		for (int i = 0; i < menus.length; i++) {
 			int choice1 = (int)(Math.random() * 2);
