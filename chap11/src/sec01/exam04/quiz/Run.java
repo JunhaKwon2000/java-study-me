@@ -21,6 +21,9 @@ public class Run {
 			System.out.println(s1 + "과 " + s2 + "은(는) 다른 학생입니다.");
 		}
 		
+		// 해시코드 확인
+		System.out.println("s1 hashcode: " + s1.hashCode());
+		System.out.println("s2 hashcode: " + s2.hashCode());
 	}
 
 }
