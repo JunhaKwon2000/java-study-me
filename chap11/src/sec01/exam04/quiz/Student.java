@@ -30,7 +30,16 @@ public class Student {
 		}
 		return false;
 	}
-	
+
+	// 선생님 코드
+//	@Override
+//	public boolean equals(Object obj) {
+//		if (this == obj) return true; // 같은 참조이면 true
+//		if (!(obj instanceof Student)) return false; // Student 타입이 아니면 false
+//		
+//		Student other = (Student) obj;
+//		return this.studentNo == other.studentNo && this.name.equals(other.name);
+//	}
 	
 	// 동등 객체를 판단할 때 equals() 를 오버라이드하면 hashCode() 도 함께 오버라이드하는 것이 일반적임
 	// Objects 라이브러리 -> Object 클래스와 관련된 다양한 메서드 제공
@@ -44,6 +53,12 @@ public class Student {
 	@Override
 	public String toString() {
 		return "[studentNo=" + studentNo + ", name=" + name + ", major=" + major + "]";
+	}
+
+
+
+	public char charAt(int index) {
+		return major.charAt(index);
 	}
 
 }
