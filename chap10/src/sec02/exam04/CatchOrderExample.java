@@ -37,9 +37,6 @@ public class CatchOrderExample {
 			System.out.println("다시 실행하세요.");
 		}
 		
-		// TODO: 테스트
-		// FIXME: 쵸비상
-		
 	}
 
 }

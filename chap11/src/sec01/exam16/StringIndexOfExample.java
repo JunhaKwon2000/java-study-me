@@ -1,6 +1,6 @@
 package sec01.exam16;
 
-public class StringIndesxOfExample {
+public class StringIndexOfExample {
 
 	public static void main(String[] args) {
 		
