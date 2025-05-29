@@ -22,6 +22,14 @@ public class MainClass {
 			System.out.println(i + "번 인덱스의 값 : " + list.get(i));
 		}
 		
+		list.remove(2); // 2번 인덱스 (4) 제거(2번이 제거되고 뒤에 요소들이 한칸씩 앞으로)
+		list.remove(2); // 2번 인덱스 (3) 제거
+		
+		System.out.println();
+		
+		for(int i = 0; i < list.size(); i++) {
+			System.out.println(i + "번 인덱스의 값 : " + list.get(i));
+		}
 		
 		
 	}

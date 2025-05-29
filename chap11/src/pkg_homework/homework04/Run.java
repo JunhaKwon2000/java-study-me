@@ -13,7 +13,7 @@ public class Run {
 		while(true) {
 			System.out.print("문자열 : ");
 			String input = sc.nextLine();
-			if ((input.charAt(0) + "").equalsIgnoreCase("n")) {
+			if (input.equalsIgnoreCase("n")) {
 				System.out.println("프로그램을 종료합니다.");
 				break;
 			}
