@@ -47,6 +47,14 @@ public class MathExample {
 		double temp = 12.3456;
 		double v11 = Math.round(temp * 100) / 100.0;
 		System.out.println(v11);
+		
+		double temp2 = 12.3456;
+		double v12 = myRound(temp2, 3);
+		System.out.println(v12);
+	}
+	
+	public static double myRound(double value, int n) {
+		return Math.round(value * Math.pow(10, n - 1)) / Math.pow(10, n-1);
 	}
 
 }
