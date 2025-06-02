@@ -1,6 +1,6 @@
-package pkg_homework.run;
+package pkg_homework.homework01.run;
 
-import pkg_homework.view.BookMenu;
+import pkg_homework.homework01.view.BookMenu;
 
 public class Run {
 	

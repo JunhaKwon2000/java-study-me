@@ -1,4 +1,4 @@
-package pkg_homework.model.vo;
+package pkg_homework.homework01.model.vo;
 
 public class Book implements Comparable<Book> {
 

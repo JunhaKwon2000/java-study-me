@@ -1,10 +1,10 @@
-package pkg_homework.view;
+package pkg_homework.homework01.view;
 
 import java.util.List;
 import java.util.Scanner;
 
-import pkg_homework.controller.BookController;
-import pkg_homework.model.vo.Book;
+import pkg_homework.homework01.controller.BookController;
+import pkg_homework.homework01.model.vo.Book;
 
 public class BookMenu {
 	
