@@ -13,6 +13,8 @@ public class Song {
 		this.singer = singer;
 	}
 	
+	
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(name, singer);
@@ -21,9 +23,7 @@ public class Song {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
+		if (!(obj instanceof Song))
 			return false;
 		Song other = (Song) obj;
 		return Objects.equals(name, other.name) && Objects.equals(singer, other.singer);

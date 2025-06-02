@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class Quiz3 {
-	// Quiz
+//      Quiz
 //		스포츠 장비 대여점에서 대여 가능한 장비 목록을 관리하려고 합니다.
 //		두 개의 창고에 있는 장비들 간의 합집합, 교집합, 차집합을 연산해서 결과를 출력하세요.
 //		결과를 출력할 때는 Iterator를 사용하여 장비 정보를 출력하세요.

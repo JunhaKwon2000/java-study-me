@@ -36,18 +36,18 @@ public class Quiz1 {
 
 	public static void main(String[] args) {
 		
-		Set<Song> set1 = new HashSet<>();
-		Set<Song> set2 = new HashSet<>();
+		Set<Song> songSet1 = new HashSet<>();
+		Set<Song> songSet2 = new HashSet<>();
 		
-		set1.add(new Song("APT.", "로제"));
-		set1.add(new Song("Whiplash", "에스파"));
-		set1.add(new Song("POWER", "G-DRAGON"));
-		System.out.println(set1);
+		songSet1.add(new Song("APT.", "로제"));
+		songSet1.add(new Song("Whiplash", "에스파"));
+		songSet1.add(new Song("POWER", "G-DRAGON"));
+		System.out.println(songSet1);
 		
-		set2.add(new Song("Whiplash", "에스파"));
-		set2.add(new Song("HAPPY", "DAY6"));
-		set2.add(new Song("HAPPY", "DAY6"));
-		System.out.println(set2);
+		songSet2.add(new Song("Whiplash", "에스파"));
+		songSet2.add(new Song("HAPPY", "DAY6"));
+		songSet2.add(new Song("HAPPY", "DAY6"));
+		System.out.println(songSet2);
 		
 	}
 	

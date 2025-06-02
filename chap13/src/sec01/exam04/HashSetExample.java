@@ -81,15 +81,40 @@ public class HashSetExample {
 		
 		// 주의: 위 3개의 메서드 모두 기준이 되는 set 을 변경함(원본 변경, 새로운 set 반환 X, 만약 변수에 담고 싶다면 비어있는 set 하나 만들고 여따 싹 복사한 후 이걸로 하셈)
 		
-		// 중복 제거
+		
+		// 9. 요소의 정렬
+		// HashSet 자체는 정렬 기능이 없음 -> 다른 컬렉션으로 변환한 뒤 정렬(List 로 변환 후 Collections.sort() 사용)
+		
+		Set<String> fruits = new HashSet<>();
+		fruits.add("Bannana");
+		fruits.add("Apple");
+		fruits.add("Orange");
+		fruits.add("Pineapple");
+		fruits.add("Blueberry");
+		System.out.println(fruits);
+		
+		// Set -> List 변환
+		List<String> fruitsList = new ArrayList<>(fruits); // 생성자 오버로드, 매개변수로 set 을 넣어줌
+		Collections.sort(fruitsList);
+		System.out.println(fruitsList);
+		
+		// 다시 Set(LinkedHashSet - 순서 유지) 으로 되돌리기
+		Set<String> sortedSet = new LinkedHashSet<>(fruitsList);
+		System.out.println(sortedSet);
+		
+		// 10. 중복 제거
 		List<String> list = new ArrayList<String>();	
 		list.add("Java");
 		list.add("Java");
+		list.add("JDBC");
 		System.out.println(list);
 		
-		Set<String> test = new HashSet<String>();
-		for (String s : list) test.add(s);
-		System.out.println(test);
+		Set<String> noDuplicates = new HashSet<>(list); // Set 으로 바꿔서 중복 제거
+		System.out.println(noDuplicates);
+		
+		// 필요시 다시 list 로 변환
+		List<String> noDuplList = new ArrayList<String>(noDuplicates);
+		System.out.println(noDuplList);
 	}
 	
 	
