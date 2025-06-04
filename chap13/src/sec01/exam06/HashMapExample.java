@@ -99,7 +99,29 @@ public class HashMapExample {
 		// 반면 for-each에서 map.remove()를 쓰면 오류 발생 가능
 		
 		// 객체 검색
-		// 
+		// HashMap 은 Key 와 Value 를 가지고 있음
+		// Key 와 Value 를 기준으로 특정값의 포함 여부를 판단할 수 있음
+		
+		// 1. containsKey() 
+		// HashMap 내에 특정키가 있는지 확인
+		System.out.println();
+		String keyToCheck = "권준하s";
+		if (map.containsKey(keyToCheck)) System.out.println("Key(" + keyToCheck + ") found: " + map.get(keyToCheck));
+		else System.out.println("Key not found");
+		
+		// 2. containsValue()
+		// HashMap 내에 특정값이 있는지 확인
+		// 중복된 값이 있어도 제일 처음 친구를 찾은 즉시 true 반환
+		int valueToCheck = 95123;
+		if (map.containsValue(valueToCheck)) {
+			System.out.println("Value(" + valueToCheck + ") found");
+		} else {
+			System.out.println("Value not found");
+		}
+		
+		// 객체 전체 삭제
+		map.clear(); // 모든 Map.Entry 삭제
+		System.out.println("총 Entry 수: " + map.size());
 		
 	}
 
