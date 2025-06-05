@@ -13,7 +13,7 @@ public class Quiz2 {
 				+ "\n대한사람 대한으로 길이보전하세";
 		
 		try (OutputStream os = new FileOutputStream("C:/Windows/Temp/애국가1.dat", true)){
-			os.write(str.getBytes());
+			os.write(str.getBytes("UTF-8")); // 글자 깨짐 방지를 위해 인코딩 명시, 생략시 기본 문자셋(UTF-8)
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
