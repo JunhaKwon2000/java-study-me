@@ -28,6 +28,8 @@ public class CharacterConvertStreamExample {
 	}
 	
 	public static String read() {
+		// 이점 -> 굳이 파일이 아닌 다른 스트림(이미지 등) 이 들어왔을 때 코드를 안바꿔도 댐(new FileInputStream("C:/Windows/Temp/test1.txt") <- 여기만 바꿔줘)
+		
 		try (FileInputStream fis = new FileInputStream("C:/Windows/Temp/test1.txt")) {
 			// 바이트 기반 -> 문자 기반으로 변경
 			Reader r = new InputStreamReader(fis);
