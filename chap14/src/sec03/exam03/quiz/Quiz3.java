@@ -26,9 +26,10 @@ public class Quiz3 {
 		int readBytes = 0;
 		try(InputStream is = new FileInputStream(img)) {
 			readBytes = is.read(buffer);
-		} catch (Exception e) {}
+			if(readBytes == -1) readBytes = 0; // 파일이 비어 있을 때를 고려
+			System.out.println("1000 바이트 읽은 후: " + (img.length() - readBytes) + " Bytes");
+		} catch (Exception e) { e.printStackTrace(); }
 		
-		System.out.println("1000 바이트 읽은 후: " + (img.length() - readBytes) + " Bytes");
 	}
 
 }
