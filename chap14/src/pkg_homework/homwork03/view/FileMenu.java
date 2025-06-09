@@ -37,10 +37,10 @@ public class FileMenu {
         StringBuilder sb = new StringBuilder();
         while (true) {
             System.out.println("파일에 저장할 내용을 입력하세요.");
-            System.out.println("exit 이라고 입력하면 종료됩니다.");
+            System.out.println("ex끝it 이라고 입력하면 종료됩니다.");
             System.out.print("내용 : ");
             String content = sc.nextLine();
-            if (content.equals("exit")) break;
+            if (content.equals("ex끝it")) break;
             sb.append(content + "\n");
         }
         System.out.print("저장할 파일 명을 입력해주세요.(ex. myFile.txt) : ");
@@ -86,10 +86,10 @@ public class FileMenu {
     		StringBuilder sb = new StringBuilder();
     		while (true) {
     			System.out.println("파일에 저장할 내용을 입력하세요.");
-    			System.out.println("exit 이라고 입력하면 종료됩니다.");
+    			System.out.println("ex끝it 이라고 입력하면 종료됩니다.");
     			System.out.print("내용 : ");
     			String content = sc.nextLine();
-    			if (content.equals("exit")) break;
+    			if (content.equals("ex끝it")) break;
     			sb.append(content + "\n");
     		}
     		fc.fileEdit(edit, sb);    		
