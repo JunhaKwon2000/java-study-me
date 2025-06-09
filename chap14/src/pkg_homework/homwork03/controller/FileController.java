@@ -3,7 +3,7 @@ package pkg_homework.homwork03.controller;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import pkg_homework.homwork03.mode.dao.FileDAO;
+import pkg_homework.homwork03.model.dao.FileDAO;
 
 public class FileController {
 

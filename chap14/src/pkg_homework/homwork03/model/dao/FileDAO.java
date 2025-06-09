@@ -1,4 +1,4 @@
-package pkg_homework.homwork03.mode.dao;
+package pkg_homework.homwork03.model.dao;
 
 import java.io.BufferedReader;
 import java.io.File;
