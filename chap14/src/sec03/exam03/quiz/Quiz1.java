@@ -37,7 +37,6 @@ public class Quiz1 {
 				System.out.println("폴더 생성 성공");				
 			} else System.out.println("폴더 생성 실패");				
 		} else System.out.println("이미 존재하는 폴더");
-
 		
 	}
 	
