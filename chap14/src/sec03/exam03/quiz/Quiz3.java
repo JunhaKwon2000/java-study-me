@@ -19,7 +19,7 @@ public class Quiz3 {
 		
 		String path = Quiz3.class.getResource("data/img_avatar.png").getPath();
 		File img = new File(path);
-		System.out.println("1000 바이트 읽기 전: " + img.length());
+		System.out.println("1000 바이트 읽기 전: " + img.length() + " Bytes");
 		
 		byte[] buffer = new byte[1000];
 		
@@ -28,7 +28,7 @@ public class Quiz3 {
 			readBytes = is.read(buffer);
 		} catch (Exception e) {}
 		
-		System.out.println("1000 바이트 읽은 후: " + (img.length() - readBytes));
+		System.out.println("1000 바이트 읽은 후: " + (img.length() - readBytes) + " Bytes");
 	}
 
 }

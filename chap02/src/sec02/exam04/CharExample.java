@@ -32,7 +32,7 @@ public class CharExample {
 		System.out.println(c9);
 		
 		System.out.println('1' - 0); // 49 - 0
-		System.out.println('1' - '0'); // 49 - 8, 
+		System.out.println('1' - '0'); // 49 - 48, 
 		
 		// 문자를 숫자로 변환할 때 - '0' 을 해주세요
 		char digit = '8';
