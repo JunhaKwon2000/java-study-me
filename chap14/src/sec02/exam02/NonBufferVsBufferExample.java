@@ -33,7 +33,15 @@ public class NonBufferVsBufferExample {
 		fos.close();
 		bis.close();
 		bos.close();
-		
+		// 보조 스트림만 close() 해도 거기에 연결된 스트림도 close() 됨
+		// 가장 안전한 방법은 try-with-resources 사용하는 것
+		try(
+			BufferedInputStream biss = new BufferedInputStream(new FileInputStream(originalFilePath2));
+			BufferedOutputStream boss = new BufferedOutputStream(new FileOutputStream(targetFilePath2));	
+		) {
+			// 파일 복사 로직 여기에
+			// try 문이 끝나면 자동으로 사용한 resource 들이 닫힘
+		} catch(Exception e) { e.printStackTrace(); }
 	}
 	
 	static int data = -1; // 입력 스트림으로부터 데이터를 전혀 읽지 않았을 경우 -1
