@@ -1,4 +1,4 @@
-package board;
+package board.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -52,7 +52,7 @@ public class JDBConnection {
 		//		* 내 PC의 IP주소: localhost = 127.0.0.1
 		//		* 3306: MySQL 데이터베이스의 기본 포트
 		// String url = "jdbc:mysql://localhost:3306/jdbc_baord?serverTiemzone=Asia/Seoul&useSSL=false"; -> 옵션 예
-		String url = "jdbc:mysql://localhost:3306/jdbc_baord?옵션파라미터";
+		String url = "jdbc:mysql://localhost:3306/jdbc_board";
 		String id = "root";
 		String pw = "mysql1234";
 		
@@ -63,7 +63,7 @@ public class JDBConnection {
 		// getConnection() 메소드로 DB에 연결 요청하고 생성된 Connection 객체를 반환
 		// 접속이 실패할 수도 있으므로 try-catch 로 예외처리
 		try {
-			DriverManager.getConnection(url, id, pw);
+			conn = DriverManager.getConnection(url, id, pw);
 			System.out.println("DB 연결 성공!");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -77,7 +77,7 @@ public class JDBConnection {
 	
 	public static void main(String[] args) {
 		
-		
+		JDBConnection jdbc = new JDBConnection();
 		
 	}
 

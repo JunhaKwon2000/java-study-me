@@ -35,3 +35,6 @@ SELECT * FROM board WHERE no = 1;
 
 -- 삭제
 DELETE FROM board WHERE no = 1;
+
+INSERT INTO board (title, writer, content) VALUES ('첫 게시글', '권준하', '게시글 본문');
+INSERT INTO board (title, writer, content) VALUES ('두번째 게시글', '김자바', '게시글 본문2');
