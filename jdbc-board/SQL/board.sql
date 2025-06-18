@@ -38,3 +38,16 @@ DELETE FROM board WHERE no = 1;
 
 INSERT INTO board (title, writer, content) VALUES ('첫 게시글', '권준하', '게시글 본문');
 INSERT INTO board (title, writer, content) VALUES ('두번째 게시글', '김자바', '게시글 본문2');
+
+-- 댓글 테이블
+CREATE TABLE comment (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  board_no INTEGER NOT NULL,
+  commenter VARCHAR(50),
+  comment TEXT,
+  reg_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (board_no) REFERENCES board(no) ON DELETE CASCADE
+  -- ON DELETE CASCADE: 외래키(FK)에 설정하는 옵션으로
+  -- 부모 테이블의 행이 삭제될 때, 해당 행을 참조하는 자식 테이블의 행들도 자동으로 삭제
+  -- 예: board의 특정 게시글이 삭제되면 그 게시글에 달린 comment들도 자동으로 삭제
+);
